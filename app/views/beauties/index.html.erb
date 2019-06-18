@@ -1,16 +1,57 @@
-<div class="container">
-  <div class="row mx-md-n5">
-    <div class="col-3">
-        <%= image_tag("beauty_top.jpg", :class => "rounded float-left", :width => "250", :height => "250") %>
-    </div>
-    <div class="col-6">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Button</a>
+  <div class="container">
+    <div class="row">
+      <div class="col-4 offset-md-1">
+          <%= image_tag("beauty_top.jpg", :class => "rounded float-left img-fluid ") %>
+      </div>
+      <div class="col-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">絞り込み検索</h5>
+            <div class="row">
+              <div class="col-4">
+                <p class="card-text">エリア</p>
+              </div>
+              <div class="col-8">
+                ＞神奈川県
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-8 offset-md-4">
+                ＞神奈川県
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-8 offset-md-4">
+                ＞川崎市
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-8 offset-md-4">
+                ＞川崎駅
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <p class="card-text">料金</p>
+              </div>
+              <div class="col-8 float-right">
+                ここに入力フォーム
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary">絞り込む</a>
         </div>
       </div>
     </div>
+    <div class="row">
+      <div class="btn-group col-8 offset-md-2" role="group" aria-label="..." id="search_bar">
+        <button type="button" class="btn btn-secondary w-100">安い</button>
+        <button type="button" class="btn btn-secondary w-100">高い</button>
+        <button type="button" class="btn btn-secondary w-100">新しい</button>
+        <button type="button" class="btn btn-secondary w-100">古い</button>
+        <button type="button" class="btn btn-secondary w-100">割引額</button>
+        <button type="button" class="btn btn-secondary w-100">期限</button>
+        <button type="button" class="btn btn-secondary w-100">地図検索</button>
+      </div>
+    </div>
   </div>
-</div>
