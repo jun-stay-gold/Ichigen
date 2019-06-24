@@ -1,0 +1,180 @@
+  <div class="container">
+    <div class="row">
+      <div class="col-9 mx-auto">
+        <div class="col-5 float-left">
+          <%= image_tag("beauty_top.jpg", :class => "rounded", :id => "card_img0") %>
+        </div>
+        <div class="col-7 float-right" id="card_search">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">絞り込み検索</h5>
+              <div class="row">
+                <div class="col-2">
+                  <p class="card-text">エリア</p>
+                </div>
+                <div class="col-10">
+                  <div class="col-flex">
+                     <p>＞関東</p>
+                     <p>＞神奈川県周辺</p>
+                     <p>＞川崎、蒲田、大井町</p>
+                  </div>
+                  <div class="col-flex">
+                    <p>＞川崎</p>
+                    <p>＞川崎駅</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2">
+                  <p class="card-text">料金</p>
+                </div>
+                <div class="col-10 float-right">
+                  ここに入力フォーム
+                </div>
+              </div>
+            </div>
+          
+          
+            <%= button_tag(type: "button", class: "mr-1 btn btn-warning", data: {target: "#exampleModalCenter", toggle: "modal"}) do %> XXXボタン名XXX <% end %> 
+            
+            <!-- モーダルの設定 -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">モーダルのタイトル</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="閉じる">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>モーダルのコンテンツ文。</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                    <button type="button" class="btn btn-primary">変更を保存</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="btn-group col-8 offset-md-2" role="group" aria-label="..." id="search_bar">
+        <button type="button" class="btn btn-secondary w-100">安い</button>
+        <button type="button" class="btn btn-secondary w-100">高い</button>
+        <button type="button" class="btn btn-secondary w-100">新しい</button>
+        <button type="button" class="btn btn-secondary w-100">古い</button>
+        <button type="button" class="btn btn-secondary w-100">割引額</button>
+        <button type="button" class="btn btn-secondary w-100">期限</button>
+        <button type="button" class="btn btn-secondary w-100">地図検索</button>
+      </div>
+    </div>
+    <div class="countainer">
+      <div class="row">
+        <div class="col-9 mx-auto">
+          <div class="col-3 sticky">
+            <div class="btn-group-vertical-lg sticky" role="group" aria-label="...">
+              <button type="button" class="btn btn-secondary w-100">安い</button>
+              <button type="button" class="btn btn-secondary w-100">高い</button>
+              <button type="button" class="btn btn-secondary w-100">新しい</button>
+              <button type="button" class="btn btn-secondary w-100">古い</button>
+              <button type="button" class="btn btn-secondary w-100">割引額</button>
+              <button type="button" class="btn btn-secondary w-100">期限</button>
+              <button type="button" class="btn btn-secondary w-100">地図検索</button>
+            </div>
+          </div>
+          <div class="card col-9 float-right">
+            <div class="row my-2" id="">
+              <div class="col-md-auto" id ="img_div">
+                <%= image_tag("beauty_top.jpg", :class => "rounded img-fluid", :id => "card_img") %>
+              </div>
+              <div class="col-md-7 mx-auto">
+                <div class="card-bocy">
+                  <h5 class="card-title">Levie 【レヴィ】</h5>
+                  <p class="card-title">【雑誌JJ掲載】木、金曜日23時まで営業★ハイセンスなスタイル提案で大人女性の支持◎キッズスペース有♪</p>
+                  <p class="card-text"><small class="text-muted">【ご新規様限定】メンズカット　2700円</small></p>
+                </div>
+              </div>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="col-2 float-left no-gutters">
+                  アクセス
+                </div>
+                <div class="col-10 float-right">
+                  京急川崎駅徒歩2分/JR川崎駅徒歩5分★当日予約OK★最終受付20時★木、金曜日23時まで
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="col-2 float-left no-gutters">
+                  期限
+                </div>
+                <div class="col-10 float-right">
+                  2019年06月末日まで
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="col-2 float-left no-gutters">
+                  条件
+                </div>
+                <div class="col-10 float-right">
+                  hotpepper beauty の会員であること
+                </div>
+              </li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">詳細ページへ</a>
+              <a href="#" class="card-link">同じ店のキャンペーンを見る</a>
+            </div>
+          </div>
+          <div class="card col-9 float-right">
+            <div class="row my-2" id="">
+              <div class="col-md-auto" id ="img_div">
+                <%= image_tag("beauty_top.jpg", :class => "rounded img-fluid", :id => "card_img") %>
+              </div>
+              <div class="col-md-7 mx-auto">
+                <div class="card-bocy">
+                  <h5 class="card-title">Levie 【レヴィ】</h5>
+                  <p class="card-title">【雑誌JJ掲載】木、金曜日23時まで営業★ハイセンスなスタイル提案で大人女性の支持◎キッズスペース有♪</p>
+                  <p class="card-text"><small class="text-muted">【ご新規様限定】メンズカット　2700円</small></p>
+                </div>
+              </div>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="col-2 float-left no-gutters">
+                  アクセス
+                </div>
+                <div class="col-10 float-right">
+                  京急川崎駅徒歩2分/JR川崎駅徒歩5分★当日予約OK★最終受付20時★木、金曜日23時まで
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="col-2 float-left no-gutters">
+                  期限
+                </div>
+                <div class="col-10 float-right">
+                  2019年06月末日まで
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="col-2 float-left no-gutters">
+                  条件
+                </div>
+                <div class="col-10 float-right">
+                  hotpepper beauty の会員であること
+                </div>
+              </li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">詳細ページへ</a>
+              <a href="#" class="card-link">同じ店のキャンペーンを見る</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
