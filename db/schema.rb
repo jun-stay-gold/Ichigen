@@ -31,18 +31,6 @@ ActiveRecord::Schema.define(version: 2019_06_16_051338) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "campains", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "service_id"
-    t.text "text"
-    t.date "date_for"
-    t.date "date_last"
-    t.text "conditions"
-    t.integer "price_for"
-    t.integer "price_last"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "services", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "service"
     t.text "text"
