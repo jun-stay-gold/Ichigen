@@ -1,0 +1,44 @@
+<div class="card col-9 float-right">
+  <div class="row my-2" id="">
+    <div class="col-md-auto" id ="img_div">
+      <%= image_tag("beauty_top.jpg", :class => "rounded img-fluid", :id => "card_img") %>
+    </div>
+    <div class="col-md-7 mx-auto">
+      <div class="card-bocy">
+        <h5 class="card-title"><%= campaign.service.service %></h5>
+        <p class="card-title"><%= campaign.service.text %></p>
+        <p class="card-text"><small class="text-muted"><%= campaign.text %></small></p>
+      </div>
+    </div>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+      <div class="col-2 float-left no-gutters">
+        アクセス
+      </div>
+      <div class="col-10 float-right">
+        <%= campaign.service.access %>
+      </div>
+    </li>
+    <li class="list-group-item">
+      <div class="col-2 float-left no-gutters">
+        期限
+      </div>
+      <div class="col-10 float-right">
+        <%= campaign.date_last %>
+      </div>
+    </li>
+    <li class="list-group-item">
+      <div class="col-2 float-left no-gutters">
+        条件
+      </div>
+      <div class="col-10 float-right">
+        <%= campaign.conditions %>
+      </div>
+    </li>
+  </ul>
+  <div class="card-body">
+    <a href=<%= campaign.service.url %> class="card-link">詳細ページへ</a>
+    <a href="#" class="card-link">同じ店のキャンペーンを見る</a>
+  </div>
+</div>
